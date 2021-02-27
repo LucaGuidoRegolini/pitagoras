@@ -7,7 +7,7 @@ Website capas de calcular os lados de um triangulo retângulo usando o **teorema
 ## Fases do desafio concluída 
 
 - Desenvolvimento do front-end em ReactJS   100%
-- Desenvolvimento do back-end em Python 3 0%
+- Desenvolvimento do back-end em Python 3 50%
 - Desenvolvimento do aplicativo em ElectronJS 0%
 
 ## Modo de usar

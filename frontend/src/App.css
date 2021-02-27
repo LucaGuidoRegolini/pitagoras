@@ -52,6 +52,10 @@
 
 }
 
+input{
+  color: #131313;
+}
+
 footer{
   margin-top: -34px;
   display: flex;
