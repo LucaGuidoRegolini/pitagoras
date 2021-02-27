@@ -1,0 +1,73 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 15px;
+}
+
+.App {
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.body{
+  max-width: 410px;
+  width: 100%;
+  max-height: 480px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #131313;
+}
+
+.img{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.form{
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form .input{
+  width: 90%;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.button {
+  margin-top: 20px;
+  border: 0px;
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #FF1F00;
+
+}
+
+footer{
+  margin-top: -34px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+  width: 100%;
+  height: 50px;
+  background-color: #8B8A8A;
+}
+
+footer p{
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+footer div{
+  flex-grow: 1;
+}
