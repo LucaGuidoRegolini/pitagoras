@@ -12,10 +12,10 @@ Website capas de calcular os lados de um triangulo retângulo usando o **teorema
 
 ## Modo de usar
 
-Já no diretório da aplicação  executar o seguinte comando.
+Já no diretório da aplicação  executar os seguintes comandos.
 
 ```cmd
-cd front-end
+cd frontend
 npm start
 ```
 
