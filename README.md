@@ -12,7 +12,8 @@ Website capas de calcular os lados de um triangulo retângulo usando o **teorema
 
 ## Modo de usar
 
-Já no diretório da aplicação  executar os seguintes comandos.
+Pelo Prompt de comando, no diretório da aplicação executar os seguintes comandos.
+>Basta copiar os codigos e colar no prompt de comando, funcina tanto para windows como linux ou macOS
 
 ```cmd
 cd frontend
