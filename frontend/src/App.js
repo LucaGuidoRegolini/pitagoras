@@ -20,20 +20,28 @@ function App() {
       b,
       c,
   }
-    console.log(data)
 
     api.post("/", data).then(data=>{
-      console.log(data.data)
 
       if(data.data == "erro"){
-        alert("é necessario indicar peço menos 2 variaveis")
+        alert("é necessario indicar 2 valores")
       }
       else if(data.data == "invalido"){
         alert("o valor dos catetos não podem ser mair que a hipotenusa")
+      }else if(data.data == "ERRO"){
+        alert("Algo deu errado, lembre-se que de colocar apenas numeros inteiros")
+        document.getElementById("a").value = ""
+        document.getElementById("b").value = ""
+        document.getElementById("c").value = ""
+      }else if(data.data == "Erro(2)"){
+        alert("É necessario deixar 1 dos valores em branco")
+        document.getElementById("a").value = ""
+        document.getElementById("b").value = ""
+        document.getElementById("c").value = ""
       }else{
         document.getElementById("a").value = (parseInt(data.data.a, 10)).toFixed(2)
-      document.getElementById("b").value = (parseInt(data.data.b, 10)).toFixed(2)
-      document.getElementById("c").value = (parseInt(data.data.c, 10)).toFixed(2)
+        document.getElementById("b").value = (parseInt(data.data.b, 10)).toFixed(2)
+        document.getElementById("c").value = (parseInt(data.data.c, 10)).toFixed(2)
       }
     })
   

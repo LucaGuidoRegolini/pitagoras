@@ -8,34 +8,35 @@ CORS(app)
 @app.route("/", methods=["POST"])
 def calcula():
     body = request.get_json()
-    print(body)
     a = body["a"]
     b = body["b"]
     c = body["c"]
 
-    if (a == "" and b == "") or (a == "" and c == "") or (b == "" and c == ""):
-        resp = "erro"
-    elif a == "":
-        x = math.sqrt(int(b)**2 + int(c)**2)
-        resp = {"a": x, "b": b, "c": c}
+    try:
+        if (a == "" and b == "") or (a == "" and c == "") or (b == "" and c == ""):
+            resp = "erro"
 
-    elif b == "":
-        if a<c: resp= "invalido"
-        else:
-            x = math.sqrt(int(a)**2 - int(c)**2)
-            resp = {"a": a, "b": x, "c": c}
+        elif a == "":
+            x = math.sqrt(int(b)**2 + int(c)**2)
+            resp = {"a": x, "b": b, "c": c}
 
-    elif c == "":
-        if a<b: resp= "invalido"
+        elif b == "":
+            if int(a)<int(c): resp= "invalido"
+            else:
+                x = math.sqrt(int(a)**2 - int(c)**2)
+                resp = {"a": a, "b": x, "c": c}
+
+        elif c == "":
+            if int(a)<int(b): 
+                resp= "invalido"
+            else:
+                x = math.sqrt(int(a)**2 - int(b)**2)
+                resp = {"a": a, "b": b, "c": x}
+            
         else:
-            x = math.sqrt(int(a)**2 - int(b)**2)
-            resp = {"a": a, "b": b, "c": x}
-        
-    else:
-        resp = {"a": a, "b": b, "c": c}
-    
-    print(resp)
+            resp = "Erro(2)"  
+    except:
+        resp = "ERRO"
     return resp
-
 
 app.run()
