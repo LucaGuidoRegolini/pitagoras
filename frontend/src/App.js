@@ -21,10 +21,20 @@ function App() {
       c,
   }
     console.log(data)
-  
 
     api.post("/", data).then(data=>{
       console.log(data.data)
+
+      if(data.data == "erro"){
+        alert("é necessario indicar peço menos 2 variaveis")
+      }
+      else if(data.data == "invalido"){
+        alert("o valor dos catetos não podem ser mair que a hipotenusa")
+      }else{
+        document.getElementById("a").value = (parseInt(data.data.a, 10)).toFixed(2)
+      document.getElementById("b").value = (parseInt(data.data.b, 10)).toFixed(2)
+      document.getElementById("c").value = (parseInt(data.data.c, 10)).toFixed(2)
+      }
     })
   
   }
@@ -53,6 +63,7 @@ function App() {
           <input className="input" type="text" id="a" 
             placeholder='Hipotenusa A'
             value={a} onChange={e => setA(e.target.value)} name="Hipotenusa"
+            //ref={"aaaaaaa"}
           /><br/><br/>
 
           <input className="button" type="submit" value="Calcular"/>
