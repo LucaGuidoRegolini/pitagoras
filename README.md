@@ -33,4 +33,5 @@ npm run electron
 ```
 
 ou pode acessar esse site para poder ver a aplicção funcionando online
+
 https://calculadora-de-pitagoras.netlify.app/
