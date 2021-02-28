@@ -8,7 +8,8 @@ Website capas de calcular os lados de um triangulo retângulo usando o **teorema
 
 - Desenvolvimento do front-end em ReactJS       100%
 - Desenvolvimento do back-end em Python 3       100%
-- Desenvolvimento do aplicativo em ElectronJS   50%
+- Desenvolvimento do aplicativo em ElectronJS   100%
+- Site online https://calculadora-de-pitagoras.netlify.app/
 
 ## Modo de usar
 
