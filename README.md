@@ -8,7 +8,7 @@ Website capas de calcular os lados de um triangulo retângulo usando o **teorema
 
 - Desenvolvimento do front-end em ReactJS       100%
 - Desenvolvimento do back-end em Python 3       100%
-- Desenvolvimento do aplicativo em ElectronJS     0%
+- Desenvolvimento do aplicativo em ElectronJS   50%
 
 ## Modo de usar
 
@@ -25,3 +25,12 @@ cd frontend
 npm start
 ```
 
+Pelo Prompt de comando, no diretório da aplicação executar os seguintes comandos para iniciar o aplicativo desktop
+>é necessario ter instalado as dependencias do package.json
+```cmd
+cd frontend
+npm run electron
+```
+
+ou pode acessar esse site para poder ver a aplicção funcionando online
+https://calculadora-de-pitagoras.netlify.app/

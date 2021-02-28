@@ -10,6 +10,7 @@
 
 # production
 /build
+/pitagora-win32
 
 # misc
 .DS_Store
